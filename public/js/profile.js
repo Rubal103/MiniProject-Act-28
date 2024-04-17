@@ -1,14 +1,9 @@
 const newFormHandler = async (event) => {
+
   event.preventDefault();}
 
-  function doupload() {
-   
-    alert('your file has been uploaded');
-    location.reload();
-}
-
-// Get all the data from the user inputs
-async function doupload(event) {
+ // Get all the data from the user inputs
+ async function doupload(event) {
   event.preventDefault();
   const phone = document.querySelector("#phoneNumber").value.trim();
   const emergencyName = document.querySelector("#emergencyName").value.trim();
@@ -45,4 +40,10 @@ async function doupload(event) {
     alert("User could not be updated." + response.statusText); // Send alert to user that their information could not be updated
   }
 }
-document.querySelector("#form").addEventListener("submit", doupload); // Event listener on form
+document.querySelector("#form").addEventListener("submit", doupload); 
+
+function doFileupload() {
+   
+  alert('your file has been uploaded');
+  location.reload();
+}

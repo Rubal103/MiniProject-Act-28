@@ -47,6 +47,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    
     picture: {
       type: DataTypes.BLOB('medium'), // Database type is binary large files for complex files like images
       allowNull: true,

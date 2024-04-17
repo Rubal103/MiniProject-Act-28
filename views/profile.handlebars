@@ -28,14 +28,14 @@
  {{/if}}
  </div>
  
-<script src="./js/profile.js"></script>
-
-<div class="container">
+ <div class="container">
         <p>Profile Picture Upload</p>
-           <img alt="" src="{{image}}" />
+
+           <img alt="" src="{{image}}"/>
         <form id='form'>
           {{!-- User contact information fields, their phone number, emergency contact name and emergency contact --}}
-                <div class="input-group">
+           {{!-- <input type ="hidden" value="{{id}}" id="userId"> --}}
+            <div class="input-group">
                 <label for='phoneNumber'>Phone Number</label>
                 <input name='phoneNumber' id='phoneNumber' placeholder={{phoneNumber}}>
             </div>
@@ -54,9 +54,9 @@
             <button class="submit-btn" type='submit'>Upload</button>
         </form>
     </div>
-    <script src='./script.js'></script>
-</body>
+    {{!-- <script src='./script.js'></script> --}}
 
 
+<script src="./js/profile.js"></script>
 
 
